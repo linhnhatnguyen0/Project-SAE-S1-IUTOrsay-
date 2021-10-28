@@ -225,6 +225,87 @@ main {
   color: #fff;
   font-size: 60px;
 }
+.materiel {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  &-img {
+    flex-shrink: 1;
+  }
+  &-description {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    width: 25%;
+    text-align: right;
+    color: $thirdColor;
+    margin-left: 250px;
+    &-title {
+      font-size: 25px;
+      font-family: "Copperplate Gothic Std 31 AB";
+    }
+    &-line {
+      height: 2px;
+      width: 50%;
+      background-color: $thirdColor;
+      margin: 20px 0;
+      box-shadow: 0 0 7px #fff;
+    }
+    button {
+      background-color: #ff3146;
+      border: none;
+      width: 250px;
+      height: 60px;
+      border-radius: 0.7rem;
+      margin-top: 30px;
+      color: #fff;
+      font-family: "friz_quadrataregular";
+      font-size: 20px;
+      cursor: pointer;
+    }
+  }
+}
+.poursuite {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+  &-img {
+    flex-shrink: 1;
+  }
+  &-description {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 25%;
+    text-align: left;
+    color: $thirdColor;
+    margin-right: 250px;
+    &-title {
+      font-size: 25px;
+      font-family: "Copperplate Gothic Std 31 AB";
+    }
+    &-line {
+      height: 2px;
+      width: 50%;
+      background-color: $thirdColor;
+      margin: 20px 0;
+      box-shadow: 0 0 7px #fff;
+    }
+    button {
+      background-color: #ff3146;
+      border: none;
+      width: 250px;
+      height: 60px;
+      border-radius: 0.7rem;
+      margin-top: 30px;
+      color: #fff;
+      font-family: "friz_quadrataregular";
+      font-size: 20px;
+      cursor: pointer;
+    }
+  }
+}
 .professeur {
   display: flex;
   align-items: center;
