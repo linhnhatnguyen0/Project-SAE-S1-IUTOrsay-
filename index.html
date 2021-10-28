@@ -4,16 +4,26 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="./node_modules/bootstrap/dist/css/bootstrap.css"
-    />
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/font/copperplate/stylesheet.css" />
     <link rel="stylesheet" href="./css/font/friz/stylesheet.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <script src="./script.js"></script>
-    <title>Document</title>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <title>Academie de League of Legend</title>
   </head>
   <body>
     <header id="header">
@@ -23,16 +33,47 @@
             <img src="./img/logo.png" alt="Academie LOL" />
           </a>
         </div>
-        <div class="nav-bar">
-          <nav>
-            <a href="">HOME</a>
-            <a href="">COURSE</a>
-            <a href="">CONTACT</a>
-          </nav>
-        </div>
       </div>
     </header>
     <main>
+      <div class="nav-mid">
+        <div class="nav-mid-button" id="nav-button">
+          <ion-icon name="grid-outline"></ion-icon>
+        </div>
+        <div class="nav-mid-element">
+          <ion-icon name="home-outline"></ion-icon>
+          <div class="nav-mid-element-drop-list">
+            <div class="nav-mid-element-drop-list-element">
+              <h2>HOME</h2>
+            </div>
+            <div class="nav-mid-element-drop-list-element">
+              <h2>MATERIEL</h2>
+            </div>
+            <div class="nav-mid-element-drop-list-element">
+              <h2>LA VIE CAMPUS</h2>
+            </div>
+          </div>
+        </div>
+        <div class="nav-mid-element">
+          <ion-icon name="school-outline"></ion-icon>
+          <div class="nav-mid-element-drop-list">
+            <div class="nav-mid-element-drop-list-element">
+              <h2>COURS</h2>
+            </div>
+            <div class="nav-mid-element-drop-list-element">
+              <h2>POURSUITE D'ETUDE</h2>
+            </div>
+          </div>
+        </div>
+        <div class="nav-mid-element">
+          <ion-icon name="location-outline"></ion-icon>
+          <div class="nav-mid-element-drop-list">
+            <div class="nav-mid-element-drop-list-element">
+              <h2>CONTACT</h2>
+            </div>
+          </div>
+        </div>
+      </div>
       <section class="home">
         <div class="bg-video">
           <video
@@ -49,15 +90,14 @@
         <div class="text">
           <h1>ACADÉMIE DE</h1>
           <img src="./img/lollogo.png" alt="" />
-          <button>SUBSCRIBE</button>
-        </div>
-          </button>
+          <button>S'INSCRIRE</button>
         </div>
       </section>
 
       <section class="description">
         <h1>DESCRIPTION</h1>
       </section>
+
       <section class="professeur">
         <div class="professeur-title">
           <h2>PROFESSEUR</h2>
@@ -66,7 +106,7 @@
           <div class="professeur-list-element">
             <div class="element-main">
               <div class="element-img">
-                <img src="./lck/marin.png" alt="">
+                <img src="./lck/marin.png" alt="" />
               </div>
               <button class="show-name">MARIN</button>
               <p>TOP LANE</p>
@@ -81,7 +121,7 @@
           <div class="professeur-list-element">
             <div class="element-main">
               <div class="element-img">
-                <img src="./lck/tarzan.png" alt="">
+                <img src="./lck/tarzan.png" alt="" />
               </div>
               <button class="show-name">TARZAN</button>
               <p>JUNGLE</p>
@@ -94,7 +134,7 @@
           <div class="professeur-list-element">
             <div class="element-main">
               <div class="element-img">
-                <img src="./lck/faker.png" alt="">
+                <img src="./lck/faker.png" alt="" />
               </div>
               <button class="show-name">FAKER</button>
               <p>MID LANE</p>
@@ -106,7 +146,7 @@
           <div class="professeur-list-element">
             <div class="element-main">
               <div class="element-img">
-                <img src="./lck/teddy.png" alt="">
+                <img src="./lck/teddy.png" alt="" />
               </div>
               <button class="show-name">TEDDY</button>
               <p>BOT LANE</p>
@@ -119,7 +159,7 @@
           <div class="professeur-list-element">
             <div class="element-main">
               <div class="element-img">
-                <img src="./lck/mata.png" alt="">
+                <img src="./lck/mata.png" alt="" />
               </div>
               <button class="show-name">MATA</button>
               <p>SUPPORT</p>
@@ -136,12 +176,12 @@
       </section>
       <section class="skin">
         <div class="skin-grid">
-          <img src="./img/leesin.png" alt="" id="leesin">
-          <img src="./img/jax.png" alt="" id="jax">
-          <img src="./img/ezreal.png" alt="" id="ezreal">
-          <img src="./img/star-guardian.png" alt="" id="star-guardian">
-          <img src="./img/ashe.png" alt="" id="ashe">
-          <img src="./img/kaisa.png" alt="" id="kaisa">
+          <img src="./img/leesin.png" alt="" id="leesin" />
+          <img src="./img/jax.png" alt="" id="jax" />
+          <img src="./img/ezreal.png" alt="" id="ezreal" />
+          <img src="./img/star-guardian.png" alt="" id="star-guardian" />
+          <img src="./img/ashe.png" alt="" id="ashe" />
+          <img src="./img/kaisa.png" alt="" id="kaisa" />
         </div>
       </section>
       <section class="counting">
@@ -169,70 +209,49 @@
         <div class="review-list">
           <div class="review-list-element">
             <div class="review-list-element-logo">
-              <img src="./img/g2.png" alt="">
+              <img src="./img/g2.png" alt="" />
             </div>
             <div class="review-list-element-desp">
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi nostrum voluptates ex. 
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
+                nostrum voluptates ex.
               </p>
               <div class="review-list-element-name">
                 <span>Carlos Rodríguez</span>
+                <p>CEO de G2 Esport</p>
               </div>
             </div>
           </div>
           <div class="review-list-element">
             <div class="review-list-element-logo">
-              <img src="./img/t1.png" alt="">
+              <img src="./img/t1.png" alt="" />
             </div>
             <div class="review-list-element-desp">
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi nostrum voluptates ex.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
+                nostrum voluptates ex.
               </p>
               <div class="review-list-element-name">
                 <span>Joe Marsh</span>
+                <p>CEO de T1</p>
               </div>
             </div>
           </div>
           <div class="review-list-element">
             <div class="review-list-element-logo">
-              <img src="./img/damwon.png" alt="">
+              <img src="./img/damwon.png" alt="" />
             </div>
             <div class="review-list-element-desp">
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi nostrum voluptates ex.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
+                nostrum voluptates ex.
               </p>
               <div class="review-list-element-name">
                 <span>Lee Yu-yeong</span>
+                <p>CEO de DAMWON Gaming</p>
               </div>
             </div>
           </div>
-        </div>
-      </section>
-
-      <section class="form">
-        <div class="form-title">
-          <h2>ENVOYEZ-NOUS</h2>
-        </div>
-        <div class="form-list">
-          <div class="form-name label-form">
-            <label for="name">NOM</label>
-            <input autocomplete="off" type="text" id="form-name" placeholder="ENTREZ VOTRE NOM">
-          </div>
-          <div class="form-ingame label-form">
-            <label for="name">NOM INGAME</label>
-            <input autocomplete="off" type="text" id="form-ingame" placeholder="ENTREZ VOTRE NOM INGAME">
-          </div>
-          <div class="form-email label-form">
-            <label for="name">EMAIL</label>
-            <input autocomplete="off" type="text" id="form-email" placeholder="EMAIL">
-          </div>
-          <div class="form-message label-form">
-            <label for="name">MESSAGE</label>
-            <textarea name="" id="" cols="30" rows="5" placeholder="MESSAGE"></textarea>
-          </div>
-        </div>
-        <div class="form-button">
-          <button>ENVOYER</button>
         </div>
       </section>
     </main>
