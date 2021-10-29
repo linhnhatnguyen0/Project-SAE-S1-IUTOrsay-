@@ -175,18 +175,18 @@ main {
   align-items: center;
   flex-direction: column;
   z-index: 2;
-}
-.text h1 {
-  font-family: "Copperplate Gothic Std 31 AB";
-  font-size: 55px;
-  margin-left: 20px;
-  color: transparent;
-  background-clip: text;
-  -webkit-background-clip: text;
-  background-image: linear-gradient(120deg, #c7f1ff, #06bcff);
-}
-.text img {
-  width: 500px;
+  h1 {
+    font-family: "Copperplate Gothic Std 31 AB";
+    font-size: 55px;
+    margin-left: 20px;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-image: linear-gradient(120deg, #c7f1ff, #06bcff);
+  }
+  img {
+    width: 500px;
+  }
 }
 .home button {
   background-color: #ff3146;
@@ -201,29 +201,29 @@ main {
   font-size: 20px;
   transition: 0.5s ease;
   cursor: pointer;
-}
-.home button:hover {
-  border: 2px solid #fff;
-  background-image: none;
-  background-color: transparent;
-  color: #c7f1ff;
-  transition: 0.5s ease;
+  &:hover {
+    border: 2px solid #fff;
+    background-image: none;
+    background-color: transparent;
+    color: #c7f1ff;
+    transition: 0.5s ease;
+  }
 }
 .description {
   margin-top: 100px;
   width: 100%;
   height: 100vh;
   position: relative;
-}
-.description h1 {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 4;
-  font-family: "Copperplate Gothic Std 31 AB";
-  color: #fff;
-  font-size: 60px;
+  h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 4;
+    font-family: "Copperplate Gothic Std 31 AB";
+    color: #fff;
+    font-size: 60px;
+  }
 }
 .materiel {
   display: flex;
