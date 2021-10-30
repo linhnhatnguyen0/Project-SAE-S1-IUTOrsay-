@@ -15,7 +15,7 @@ header {
   align-items: center;
   height: 12vh;
   margin: 0;
-  position: fixed;
+  position: absolute;
   z-index: 5;
   transition: 0.5s ease;
   width: 100%;
@@ -32,6 +32,7 @@ header img {
   display: flex;
   align-items: center;
   width: 80%;
+  justify-content: center;
 }
 
 main {
@@ -329,6 +330,47 @@ main {
   cursor: pointer;
 }
 
+.vie-campus {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.vie-campus-img {
+  flex-shrink: 1;
+}
+.vie-campus-description {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  width: 25%;
+  text-align: right;
+  color: #fff;
+  margin-left: 250px;
+}
+.vie-campus-description-title {
+  font-size: 25px;
+  font-family: "Copperplate Gothic Std 31 AB";
+}
+.vie-campus-description-line {
+  height: 2px;
+  width: 50%;
+  background-color: #fff;
+  margin: 20px 0;
+  box-shadow: 0 0 7px #fff;
+}
+.vie-campus-description button {
+  background-color: #ff3146;
+  border: none;
+  width: 250px;
+  height: 60px;
+  border-radius: 0.7rem;
+  margin-top: 30px;
+  color: #fff;
+  font-family: "friz_quadrataregular";
+  font-size: 20px;
+  cursor: pointer;
+}
+
 .professeur {
   display: flex;
   align-items: center;
@@ -337,35 +379,35 @@ main {
   width: 100%;
   margin-bottom: 100px;
 }
-
 .professeur-title {
   z-index: 4;
   font-family: "Copperplate Gothic Std 31 AB";
   color: #fff;
   margin-bottom: 100px;
+  font-size: 30px;
 }
-
 .professeur-list {
   display: flex;
   align-items: center;
-  width: 100%;
+  width: 80%;
   justify-content: space-around;
+  flex-wrap: wrap;
+  margin-left: -100px;
 }
-
 .professeur-list-element {
-  width: 15%;
+  width: 20%;
   display: flex;
   align-items: center;
   flex-direction: column;
-  height: 400px;
+  height: 450px;
   justify-content: space-between;
-  box-shadow: 0 0 8px 0 rgba(20, 200, 255, 0.651);
-  border: 1px solid #397fff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.986);
   background-color: #000535;
   border-radius: 1rem;
   transition: 0.5s ease;
+  margin-left: 100px;
+  margin-bottom: 100px;
 }
-
 .professeur-list-element button {
   background-color: #ff3146;
   width: 50%;
@@ -373,51 +415,47 @@ main {
   border: none;
   border-radius: 0.2rem;
   color: #fff;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-size: 15px;
   margin: 30px 0 10px 0;
 }
-
-.hide1 {
-  height: 550px;
-  transition: 0.5s ease;
-}
-
 .professeur-list-element p {
   color: #fff;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 600;
 }
-
-.element-main {
+.professeur-list-element .element-main {
   display: flex;
   align-items: center;
   flex-direction: column;
 }
-
-.element-img {
-  width: 100%;
+.professeur-list-element .element-img {
+  width: 70%;
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  height: 250px;
   flex-direction: column;
   background-color: #0000003b;
+  height: 250px;
+  margin-top: 50px;
 }
-
-.element-img img {
+.professeur-list-element .element-img img {
   width: 100%;
 }
-
-.name-team {
+.professeur-list-element .name-team {
   display: none;
   align-items: center;
   flex-direction: column;
   color: #a184ff;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 600;
   margin-bottom: 30px;
+  transition: 0.5s ease;
+}
+
+.hide1 {
+  height: 550px;
   transition: 0.5s ease;
 }
 
@@ -505,7 +543,7 @@ main {
   display: flex;
   align-items: center;
   flex-direction: column;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   height: 80vh;
 }
 

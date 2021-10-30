@@ -14,7 +14,7 @@ header {
   align-items: center;
   height: 12vh;
   margin: 0;
-  position: fixed;
+  position: absolute;
   z-index: 5;
   transition: 0.5s ease;
   width: 100%;
@@ -30,6 +30,7 @@ header {
   display: flex;
   align-items: center;
   width: 80%;
+  justify-content: center;
 }
 main {
   width: 100%;
@@ -101,7 +102,6 @@ main {
       justify-content: space-between;
       transition: 0.5s ease;
       height: unset;
-
       a {
         font-size: 20px;
         font-weight: normal;
@@ -318,6 +318,48 @@ main {
     }
   }
 }
+
+.vie-campus {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  &-img {
+    flex-shrink: 1;
+  }
+  &-description {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    width: 25%;
+    text-align: right;
+    color: $thirdColor;
+    margin-left: 250px;
+    &-title {
+      font-size: 25px;
+      font-family: "Copperplate Gothic Std 31 AB";
+    }
+    &-line {
+      height: 2px;
+      width: 50%;
+      background-color: $thirdColor;
+      margin: 20px 0;
+      box-shadow: 0 0 7px #fff;
+    }
+    button {
+      background-color: #ff3146;
+      border: none;
+      width: 250px;
+      height: 60px;
+      border-radius: 0.7rem;
+      margin-top: 30px;
+      color: #fff;
+      font-family: "friz_quadrataregular";
+      font-size: 20px;
+      cursor: pointer;
+    }
+  }
+}
+
 .professeur {
   display: flex;
   align-items: center;
@@ -325,78 +367,83 @@ main {
   margin-top: 100px;
   width: 100%;
   margin-bottom: 100px;
-}
-.professeur-title {
-  z-index: 4;
-  font-family: "Copperplate Gothic Std 31 AB";
-  color: #fff;
-  margin-bottom: 100px;
-}
-.professeur-list {
-  display: flex;
-  align-items: center;
-  width: 100%;
-  justify-content: space-around;
-}
-.professeur-list-element {
-  width: 15%;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  height: 400px;
-  justify-content: space-between;
-  box-shadow: 0 0 8px 0 rgba(20, 200, 255, 0.651);
-  border: 1px solid rgb(57, 127, 255);
-  background-color: rgb(0, 5, 53);
-  border-radius: 1rem;
-  transition: 0.5s ease;
-}
-.professeur-list-element button {
-  background-color: #ff3146;
-  width: 50%;
-  height: 40px;
-  border: none;
-  border-radius: 0.2rem;
-  color: #fff;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 500;
-  font-size: 15px;
-  margin: 30px 0 10px 0;
+  &-title {
+    z-index: 4;
+    font-family: "Copperplate Gothic Std 31 AB";
+    color: #fff;
+    margin-bottom: 100px;
+    font-size: 30px;
+  }
+  &-list {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-left: -100px;
+    &-element {
+      width: 20%;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      height: 450px;
+      justify-content: space-between;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.986);
+      background-color: rgb(0, 5, 53);
+      border-radius: 1rem;
+      transition: 0.5s ease;
+      margin-left: 100px;
+      margin-bottom: 100px;
+      button {
+        background-color: #ff3146;
+        width: 50%;
+        height: 40px;
+        border: none;
+        border-radius: 0.2rem;
+        color: #fff;
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
+        font-size: 15px;
+        margin: 30px 0 10px 0;
+      }
+      p {
+        color: #fff;
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+      }
+      .element-main {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+      }
+      .element-img {
+        width: 70%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        flex-direction: column;
+        background-color: #0000003b;
+        height: 250px;
+        margin-top: 50px;
+      }
+      .element-img img {
+        width: 100%;
+      }
+      .name-team {
+        display: none;
+        align-items: center;
+        flex-direction: column;
+        color: #a184ff;
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        margin-bottom: 30px;
+        transition: 0.5s ease;
+      }
+    }
+  }
 }
 .hide1 {
   height: 550px;
-  transition: 0.5s ease;
-}
-.professeur-list-element p {
-  color: #fff;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 600;
-}
-.element-main {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
-.element-img {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  height: 250px;
-  flex-direction: column;
-  background-color: #0000003b;
-}
-.element-img img {
-  width: 100%;
-}
-.name-team {
-  display: none;
-  align-items: center;
-  flex-direction: column;
-  color: #a184ff;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 600;
-  margin-bottom: 30px;
   transition: 0.5s ease;
 }
 .hide2 {
@@ -472,7 +519,7 @@ main {
   display: flex;
   align-items: center;
   flex-direction: column;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   height: 80vh;
 }
 .review-title {
