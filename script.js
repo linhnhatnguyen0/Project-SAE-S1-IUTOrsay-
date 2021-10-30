@@ -9,6 +9,8 @@ window.onscroll = function () {
   prevScrollpos = currentScrollPos;
 };
 
+var timer;
+var delay = 2000;
 $(document).ready(function () {
   $(".name-team").css("opacity", 0);
   $("button.show-name").each(function () {
@@ -29,30 +31,16 @@ $(document).ready(function () {
   });
   $("#nav-button").on("click", function () {
     $(this).parent().children(".nav-mid-element").toggleClass("hide-element");
-    $(this).parent().toggleClass("height-nav");
+    $(this).parent().parent().toggleClass("height-nav");
   });
-  $(".nav-mid-element").mouseenter(function () {
-    if ($(this).children(".nav-mid-element-drop-list").css("opacity") == 0) {
-      $(this).children(".nav-mid-element-drop-list").animate(
-        {
-          width: "250px",
-          opacity: 1,
-        },
-        300
-      );
+  $(".nav-mid-element").hover(
+    function () {
+      $(this).children("ul").css("display", "flex");
+    },
+    function () {
+      $(this).children("ul").css("display", "none");
     }
-  });
-  $(".nav-mid-element").mouseleave(function () {
-    if ($(this).children(".nav-mid-element-drop-list").css("opacity") == 1) {
-      $(this).children(".nav-mid-element-drop-list").animate(
-        {
-          width: "0px",
-          opacity: 0,
-        },
-        300
-      );
-    }
-  });
+  );
 });
 
 $(window).on("load", function () {

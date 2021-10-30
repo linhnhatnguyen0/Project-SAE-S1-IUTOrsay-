@@ -14,6 +14,12 @@
     <link rel="stylesheet" href="./css/font/copperplate/stylesheet.css" />
     <link rel="stylesheet" href="./css/font/friz/stylesheet.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-1.12.4.min.js"
+      integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ"
+      crossorigin="anonymous"
+    ></script>
+    <script src="jquery.hoverDelay.js"></script>
     <script src="./script.js"></script>
     <script
       type="module"
@@ -36,44 +42,34 @@
       </div>
     </header>
     <main>
-      <div class="nav-mid">
-        <div class="nav-mid-button" id="nav-button">
-          <ion-icon name="grid-outline"></ion-icon>
-        </div>
-        <div class="nav-mid-element">
-          <ion-icon name="home-outline"></ion-icon>
-          <div class="nav-mid-element-drop-list">
-            <div class="nav-mid-element-drop-list-element">
-              <h2>HOME</h2>
-            </div>
-            <div class="nav-mid-element-drop-list-element">
-              <h2>MATERIEL</h2>
-            </div>
-            <div class="nav-mid-element-drop-list-element">
-              <h2>LA VIE CAMPUS</h2>
-            </div>
-          </div>
-        </div>
-        <div class="nav-mid-element">
-          <ion-icon name="school-outline"></ion-icon>
-          <div class="nav-mid-element-drop-list">
-            <div class="nav-mid-element-drop-list-element">
-              <h2>COURS</h2>
-            </div>
-            <div class="nav-mid-element-drop-list-element">
-              <h2>POURSUITE D'ETUDE</h2>
-            </div>
-          </div>
-        </div>
-        <div class="nav-mid-element">
-          <ion-icon name="location-outline"></ion-icon>
-          <div class="nav-mid-element-drop-list">
-            <div class="nav-mid-element-drop-list-element">
-              <h2>CONTACT</h2>
-            </div>
-          </div>
-        </div>
-      </div>
+      <nav class="nav-mid">
+        <ul>
+          <li class="nav-mid-button" id="nav-button">
+            <ion-icon name="grid-outline"></ion-icon>
+          </li>
+          <li class="nav-mid-element">
+            <ion-icon name="home-outline"></ion-icon>
+            <ul>
+              <a href="#"><li>HOME</li></a>
+              <a href="#"><li>MATERIEL</li> </a>
+              <a href="#"><li>LA VIE CAMPUS</li> </a>
+            </ul>
+          </li>
+          <li class="nav-mid-element">
+            <ion-icon name="school-outline"></ion-icon>
+            <ul>
+              <a href="#"><li>COURS</li> </a>
+              <a href="#"><li>POURSUITE D'ETUDE</li></a>
+            </ul>
+          </li>
+          <li class="nav-mid-element">
+            <ion-icon name="location-outline"></ion-icon>
+            <ul>
+              <a href="#"><li>CONTACT</li> </a>
+            </ul>
+          </li>
+        </ul>
+      </nav>
       <section class="home">
         <div class="bg-video">
           <video
