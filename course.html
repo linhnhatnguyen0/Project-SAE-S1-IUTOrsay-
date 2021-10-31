@@ -4,14 +4,17 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="./node_modules/bootstrap/dist/css/bootstrap.css"
-    />
     <link rel="stylesheet" href="./css/style-course.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/font/copperplate/stylesheet.css" />
     <link rel="stylesheet" href="./css/font/friz/stylesheet.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
     <script
       type="module"
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
@@ -31,24 +34,45 @@
             <img src="./img/logo.png" alt="Academie LOL" />
           </a>
         </div>
-        <div class="nav-bar">
-          <nav>
-            <a href="index.html">HOME</a>
-            <a href="course.html">COURSE</a>
-            <a href="">CONTACT</a>
-          </nav>
-        </div>
       </div>
     </header>
     <main>
+      <nav class="nav-mid">
+        <ul>
+          <li class="nav-mid-button" id="nav-button">
+            <ion-icon name="grid-outline"></ion-icon>
+          </li>
+          <li class="nav-mid-element">
+            <ion-icon name="home-outline"></ion-icon>
+            <ul>
+              <a href="#"><li>HOME</li></a>
+              <a href="#"><li>MATERIEL</li> </a>
+              <a href="#"><li>LA VIE CAMPUS</li> </a>
+            </ul>
+          </li>
+          <li class="nav-mid-element">
+            <ion-icon name="school-outline"></ion-icon>
+            <ul>
+              <a href="./course.html"><li>COURS</li> </a>
+              <a href="#"><li>POURSUITE D'ETUDE</li></a>
+            </ul>
+          </li>
+          <li class="nav-mid-element">
+            <ion-icon name="location-outline"></ion-icon>
+            <ul>
+              <a href="#"><li>CONTACT</li> </a>
+            </ul>
+          </li>
+        </ul>
+      </nav>
       <div class="paneaux">
-        <img src="./img/paneau-course.png" alt="" />
+        <img src="./img/banner-01.png" alt="" />
         <div class="paneaux-title">
-          <h1>COURSE</h1>
+          <h1>COURS</h1>
           <div class="paneaux-nav">
             <a href="index.html">HOME</a>
             <ion-icon name="arrow-forward-outline"></ion-icon>
-            <a href="course.html">COURSE</a>
+            <a href="course.html">COURS</a>
           </div>
         </div>
       </div>
@@ -56,7 +80,5 @@
     <footer>
       <p>Powered by Linh et Thibaut</p>
     </footer>
-    <script src="./jquery.min.js"></script>
-    <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
   </body>
 </html>
