@@ -36,15 +36,6 @@ header img {
   justify-content: center;
 }
 
-main {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  font-family: "Poppins", sans-serif;
-}
-
 .height-nav {
   height: 80px;
 }
@@ -193,8 +184,24 @@ main {
   color: #fff;
 }
 
-.cours-list {
+main {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  font-family: "Poppins", sans-serif;
   margin-top: 700px;
+}
+
+.filter {
+  width: 30%;
+  height: 500px;
+  background-color: #02123b;
+  border-radius: 0.8rem;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.822);
+}
+
+.cours-list {
   width: 50%;
   color: #fff;
 }
