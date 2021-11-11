@@ -8,6 +8,9 @@ body {
   width: 100%;
   background-color: #010d2b;
   background: url("../img/background-main.png");
+  object-fit: cover;
+  background-position: center;
+  background-size: 50%;
 }
 
 header {
@@ -42,6 +45,7 @@ main {
   justify-content: center;
   flex-direction: column;
   font-family: "Poppins", sans-serif;
+  height: 1000vh;
 }
 
 .height-nav {
@@ -154,7 +158,8 @@ main {
 }
 
 .paneaux {
-  position: relative;
+  position: absolute;
+  top: 0;
 }
 .paneaux img {
   width: 100%;
