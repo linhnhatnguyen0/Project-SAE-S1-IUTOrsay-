@@ -11,6 +11,7 @@ $(document).ready(function () {
       $(this).children("ul").css("display", "none");
     }
   );
-  var textHeight = $(".cours-img").innerWidth();
+  var textHeight = $(".cours-img").children("img").innerHeight();
+  console.log(textHeight);
   $(".cours-text").css("height", textHeight);
 });

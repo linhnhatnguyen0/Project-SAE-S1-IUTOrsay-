@@ -194,15 +194,16 @@ main {
 }
 
 .filter {
-  width: 30%;
+  width: 20%;
   height: 500px;
   background-color: #02123b;
   border-radius: 0.8rem;
   box-shadow: 0 0 25px rgba(0, 0, 0, 0.822);
+  margin-left: 150px;
 }
 
 .cours-list {
-  width: 50%;
+  width: 60%;
   color: #fff;
 }
 .cours-list-element {
@@ -216,7 +217,7 @@ main {
 }
 .cours-list-element .cours-img {
   margin: 30px;
-  width: 40%;
+  width: 30%;
 }
 .cours-list-element .cours-img img {
   width: 100%;
@@ -248,7 +249,15 @@ main {
   font-size: 27px;
   font-weight: 500;
 }
+.cours-list-element .cours-text-name-teacher {
+  display: flex;
+  align-items: center;
+}
+.cours-list-element .cours-text-name-teacher img {
+  width: 20%;
+}
 .cours-list-element .cours-text-name-teacher span {
+  margin-left: 20px;
   color: #3782ff;
 }
 

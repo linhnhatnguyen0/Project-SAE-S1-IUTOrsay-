@@ -187,14 +187,15 @@ main {
   margin-top: 700px;
 }
 .filter {
-  width: 30%;
+  width: 20%;
   height: 500px;
   background-color: #02123b;
   border-radius: 0.8rem;
   box-shadow: 0 0 25px rgba(0, 0, 0, 0.822);
+  margin-left: 150px;
 }
 .cours-list {
-  width: 50%;
+  width: 60%;
   color: #fff;
   &-element {
     width: 100%;
@@ -206,7 +207,7 @@ main {
     box-shadow: 0 0 25px rgba(0, 0, 0, 0.822);
     .cours-img {
       margin: 30px;
-      width: 40%;
+      width: 30%;
       img {
         width: 100%;
       }
@@ -237,8 +238,16 @@ main {
         font-size: 27px;
         font-weight: 500;
       }
-      &-name-teacher span {
-        color: $fourthColor;
+      &-name-teacher {
+        display: flex;
+        align-items: center;
+        img {
+          width: 20%;
+        }
+        span {
+          margin-left: 20px;
+          color: $fourthColor;
+        }
       }
     }
   }
