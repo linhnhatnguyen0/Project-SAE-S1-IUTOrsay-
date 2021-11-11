@@ -19,7 +19,6 @@ header {
   margin: 0;
   position: absolute;
   z-index: 5;
-  transition: 0.5s ease;
   width: 100%;
   justify-content: center;
   top: 0;
@@ -44,7 +43,6 @@ main {
   justify-content: center;
   flex-direction: column;
   font-family: "Poppins", sans-serif;
-  height: 1000vh;
 }
 
 .height-nav {
@@ -159,6 +157,7 @@ main {
 .paneaux {
   position: absolute;
   top: 0;
+  z-index: 1;
 }
 .paneaux img {
   width: 100%;
@@ -192,6 +191,58 @@ main {
 }
 .paneaux-title ion-icon {
   color: #fff;
+}
+
+.cours-list {
+  margin-top: 700px;
+  width: 50%;
+  color: #fff;
+}
+.cours-list-element {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 50px;
+  background-color: #02123b;
+  border-radius: 0.8rem;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.822);
+}
+.cours-list-element .cours-img {
+  margin: 30px;
+  width: 40%;
+}
+.cours-list-element .cours-img img {
+  width: 100%;
+}
+.cours-list-element .cours-text {
+  word-wrap: break-word;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin: 30px;
+  flex-direction: column;
+}
+.cours-list-element .cours-text .cours-text-small-element {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  margin: 10px 0;
+}
+.cours-list-element .cours-text .cours-text-small-element li {
+  margin-right: 70px;
+  color: #c4c4c4;
+  display: flex;
+  align-items: center;
+}
+.cours-list-element .cours-text .cours-text-small-element li span {
+  margin-left: 10px;
+}
+.cours-list-element .cours-text h1 {
+  font-size: 27px;
+  font-weight: 500;
+}
+.cours-list-element .cours-text-name-teacher span {
+  color: #3782ff;
 }
 
 footer {
