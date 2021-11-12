@@ -87,7 +87,8 @@ header {
       border-radius: 2rem;
       width: 300px;
       position: absolute;
-      top: 0px;
+      top: 50%;
+      transform: translateY(-50%);
       left: 100%;
       background-color: $goldFirstColor;
       display: none;
@@ -97,7 +98,7 @@ header {
       transition: 0.5s ease;
       height: unset;
       a {
-        font-size: 20px;
+        font-size: 1.1rem;
         font-weight: normal;
         text-decoration: none;
         color: #fff;
@@ -158,7 +159,7 @@ header {
     h1 {
       font-family: "Copperplate Gothic Std 31 AB";
       color: $thirdColor;
-      font-size: 50px;
+      font-size: 3rem;
     }
     .paneaux-nav {
       display: flex;
@@ -171,7 +172,7 @@ header {
       color: $thirdColor;
       text-decoration: none;
       font-weight: 500;
-      font-size: 18px;
+      font-size: 1rem;
     }
     ion-icon {
       color: $thirdColor;
@@ -188,11 +189,39 @@ main {
 }
 .filter {
   width: 20%;
-  height: 500px;
   background-color: #02123b;
   border-radius: 0.8rem;
   box-shadow: 0 0 25px rgba(0, 0, 0, 0.822);
   margin-left: 150px;
+  position: relative;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 100px;
+  .lane {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 70%;
+    margin: 50px 0;
+    h3 {
+      font-size: 30px;
+      margin-bottom: 10px;
+    }
+    label {
+      margin-bottom: 15px;
+      width: 80%;
+      position: relative;
+      input {
+        position: absolute;
+        right: 0;
+      }
+    }
+  }
+}
+.hide-label {
+  display: flex;
 }
 .cours-list {
   width: 60%;
@@ -221,7 +250,7 @@ main {
       flex-direction: column;
       .cours-text-small-element {
         display: flex;
-        align-items: center;
+
         list-style-type: none;
         margin: 10px 0;
         li {
@@ -267,6 +296,7 @@ footer p {
   color: #fff;
   font-family: "friz_quadrataregular";
   font-size: 20px;
+  text-align: center;
 }
 ::-webkit-scrollbar {
   width: 5px;
@@ -283,4 +313,41 @@ footer p {
 
 ::-webkit-scrollbar-thumb:hover {
   background: rgb(97, 160, 255);
+}
+@media screen and (max-width: 1023px) {
+  header {
+    display: none;
+  }
+  .paneaux img {
+    transform: scale(1.5);
+  }
+  main {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 300px;
+    .filter {
+      width: 60%;
+      margin-left: 0;
+    }
+    .cours-list {
+      width: 80%;
+      .cours-img {
+        flex-shrink: 0;
+        width: 20%;
+      }
+      .cours-text {
+        width: 70%;
+        &-description {
+          width: 100%;
+          p {
+            margin-bottom: 20px;
+          }
+        }
+        &-small-element {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+      }
+    }
+  }
 }

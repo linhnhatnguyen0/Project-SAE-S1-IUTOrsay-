@@ -7,7 +7,7 @@
 body {
   width: 100%;
   background-color: #010d2b;
-  background: url("../img/background-main.png");
+  background: url("../img/bg-main.png");
 }
 
 header {
@@ -100,7 +100,8 @@ main {
   border-radius: 2rem;
   width: 300px;
   position: absolute;
-  top: 0px;
+  top: 50%;
+  transform: translateY(-50%);
   left: 100%;
   background-color: #ba9440;
   display: none;
@@ -251,9 +252,13 @@ main {
   display: flex;
   align-items: center;
   width: 100%;
+  justify-content: space-between;
 }
 .materiel-img {
-  flex-shrink: 1;
+  width: 50%;
+}
+.materiel-img img {
+  width: 100%;
 }
 .materiel-description {
   display: flex;
@@ -262,7 +267,7 @@ main {
   width: 25%;
   text-align: right;
   color: #fff;
-  margin-left: 250px;
+  margin-right: 100px;
 }
 .materiel-description-title {
   font-size: 25px;
@@ -296,6 +301,9 @@ main {
 }
 .poursuite-img {
   flex-shrink: 1;
+}
+.poursuite-img img {
+  width: 100%;
 }
 .poursuite-description {
   display: flex;
@@ -337,6 +345,9 @@ main {
 }
 .vie-campus-img {
   flex-shrink: 1;
+}
+.vie-campus-img img {
+  width: 100%;
 }
 .vie-campus-description {
   display: flex;
@@ -538,13 +549,12 @@ main {
 }
 
 .review {
-  background: url(../img/review-bg.png);
   width: 100%;
   display: flex;
   align-items: center;
   flex-direction: column;
   font-family: "Poppins", sans-serif;
-  height: 80vh;
+  margin-bottom: 100px;
 }
 
 .review-title {
@@ -649,6 +659,84 @@ footer p {
 
 ::-webkit-scrollbar-thumb:hover {
   background: #61a0ff;
+}
+
+@media screen and (max-width: 1023px) {
+  .bg-video {
+    display: none;
+  }
+
+  .overlay {
+    display: none;
+  }
+
+  .text {
+    width: 70%;
+  }
+  .text h1 {
+    font-size: 3rem;
+  }
+  .text img {
+    width: 100%;
+  }
+
+  .description h1 {
+    font-size: 2rem;
+    margin: 0;
+  }
+
+  .materiel,
+.poursuite,
+.vie-campus {
+    flex-direction: column;
+    margin-bottom: 150px;
+  }
+  .materiel-img,
+.poursuite-img,
+.vie-campus-img {
+    width: 100%;
+  }
+  .materiel-description,
+.poursuite-description,
+.vie-campus-description {
+    width: 80%;
+    margin: 30px 0 0 0;
+    align-items: center;
+    text-align: center;
+  }
+
+  .poursuite-img {
+    order: 1;
+  }
+  .poursuite-description {
+    order: 2;
+  }
+
+  .professeur {
+    flex-direction: column;
+  }
+  .professeur-list {
+    width: 90%;
+  }
+  .professeur-list-element {
+    width: 80%;
+  }
+
+  .skin-grid {
+    width: 90%;
+  }
+
+  .counting {
+    flex-direction: column;
+  }
+
+  .review-list {
+    flex-direction: column;
+  }
+  .review-list-element {
+    width: 80%;
+    margin-bottom: 100px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

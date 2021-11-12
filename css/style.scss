@@ -7,7 +7,7 @@
 body {
   width: 100%;
   background-color: #010d2b;
-  background: url("../img/background-main.png");
+  background: url("../img/bg-main.png");
 }
 header {
   display: flex;
@@ -93,7 +93,8 @@ main {
       border-radius: 2rem;
       width: 300px;
       position: absolute;
-      top: 0px;
+      top: 50%;
+      transform: translateY(-50%);
       left: 100%;
       background-color: $goldFirstColor;
       display: none;
@@ -241,8 +242,12 @@ main {
   display: flex;
   align-items: center;
   width: 100%;
+  justify-content: space-between;
   &-img {
-    flex-shrink: 1;
+    width: 50%;
+    img {
+      width: 100%;
+    }
   }
   &-description {
     display: flex;
@@ -251,7 +256,7 @@ main {
     width: 25%;
     text-align: right;
     color: $thirdColor;
-    margin-left: 250px;
+    margin-right: 100px;
     &-title {
       font-size: 25px;
       font-family: "Copperplate Gothic Std 31 AB";
@@ -284,6 +289,9 @@ main {
   width: 100%;
   &-img {
     flex-shrink: 1;
+    img {
+      width: 100%;
+    }
   }
   &-description {
     display: flex;
@@ -325,6 +333,9 @@ main {
   width: 100%;
   &-img {
     flex-shrink: 1;
+    img {
+      width: 100%;
+    }
   }
   &-description {
     display: flex;
@@ -514,13 +525,12 @@ main {
 }
 
 .review {
-  background: url(../img/review-bg.png);
   width: 100%;
   display: flex;
   align-items: center;
   flex-direction: column;
   font-family: "Poppins", sans-serif;
-  height: 80vh;
+  margin-bottom: 100px;
 }
 .review-title {
   margin: 50px 0;
@@ -611,4 +621,72 @@ footer p {
 
 ::-webkit-scrollbar-thumb:hover {
   background: rgb(97, 160, 255);
+}
+@media screen and (max-width: 1023px) {
+  .bg-video {
+    display: none;
+  }
+  .overlay {
+    display: none;
+  }
+  .text {
+    width: 70%;
+    h1 {
+      font-size: 3rem;
+    }
+    img {
+      width: 100%;
+    }
+  }
+  .description {
+    h1 {
+      font-size: 2rem;
+      margin: 0;
+    }
+  }
+  .materiel,
+  .poursuite,
+  .vie-campus {
+    flex-direction: column;
+    margin-bottom: 150px;
+    &-img {
+      width: 100%;
+    }
+    &-description {
+      width: 80%;
+      margin: 30px 0 0 0;
+      align-items: center;
+      text-align: center;
+    }
+  }
+  .poursuite {
+    &-img {
+      order: 1;
+    }
+    &-description {
+      order: 2;
+    }
+  }
+  .professeur {
+    flex-direction: column;
+    &-list {
+      width: 90%;
+      &-element {
+        width: 80%;
+      }
+    }
+  }
+  .skin-grid {
+    width: 90%;
+  }
+  .counting {
+    flex-direction: column;
+  }
+  .review-list {
+    flex-direction: column;
+    &-element {
+      width: 80%;
+      margin-bottom: 100px;
+    }
+  }
 }

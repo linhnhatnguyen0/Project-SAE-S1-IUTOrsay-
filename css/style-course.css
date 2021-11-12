@@ -92,7 +92,8 @@ header img {
   border-radius: 2rem;
   width: 300px;
   position: absolute;
-  top: 0px;
+  top: 50%;
+  transform: translateY(-50%);
   left: 100%;
   background-color: #ba9440;
   display: none;
@@ -103,7 +104,7 @@ header img {
   height: unset;
 }
 .nav-mid-element ul a {
-  font-size: 20px;
+  font-size: 1.1rem;
   font-weight: normal;
   text-decoration: none;
   color: #fff;
@@ -165,7 +166,7 @@ header img {
 .paneaux-title h1 {
   font-family: "Copperplate Gothic Std 31 AB";
   color: #fff;
-  font-size: 50px;
+  font-size: 3rem;
 }
 .paneaux-title .paneaux-nav {
   display: flex;
@@ -178,7 +179,7 @@ header img {
   color: #fff;
   text-decoration: none;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 1rem;
 }
 .paneaux-title ion-icon {
   color: #fff;
@@ -195,11 +196,40 @@ main {
 
 .filter {
   width: 20%;
-  height: 500px;
   background-color: #02123b;
   border-radius: 0.8rem;
   box-shadow: 0 0 25px rgba(0, 0, 0, 0.822);
   margin-left: 150px;
+  position: relative;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 100px;
+}
+.filter .lane {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 70%;
+  margin: 50px 0;
+}
+.filter .lane h3 {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+.filter .lane label {
+  margin-bottom: 15px;
+  width: 80%;
+  position: relative;
+}
+.filter .lane label input {
+  position: absolute;
+  right: 0;
+}
+
+.hide-label {
+  display: flex;
 }
 
 .cours-list {
@@ -232,7 +262,6 @@ main {
 }
 .cours-list-element .cours-text .cours-text-small-element {
   display: flex;
-  align-items: center;
   list-style-type: none;
   margin: 10px 0;
 }
@@ -277,6 +306,7 @@ footer p {
   color: #fff;
   font-family: "friz_quadrataregular";
   font-size: 20px;
+  text-align: center;
 }
 
 ::-webkit-scrollbar {
@@ -294,6 +324,46 @@ footer p {
 
 ::-webkit-scrollbar-thumb:hover {
   background: #61a0ff;
+}
+
+@media screen and (max-width: 1023px) {
+  header {
+    display: none;
+  }
+
+  .paneaux img {
+    transform: scale(1.5);
+  }
+
+  main {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 300px;
+  }
+  main .filter {
+    width: 60%;
+    margin-left: 0;
+  }
+  main .cours-list {
+    width: 80%;
+  }
+  main .cours-list .cours-img {
+    flex-shrink: 0;
+    width: 20%;
+  }
+  main .cours-list .cours-text {
+    width: 70%;
+  }
+  main .cours-list .cours-text-description {
+    width: 100%;
+  }
+  main .cours-list .cours-text-description p {
+    margin-bottom: 20px;
+  }
+  main .cours-list .cours-text-small-element {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 
 /*# sourceMappingURL=style-course.css.map */
