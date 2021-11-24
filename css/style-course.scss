@@ -10,6 +10,7 @@ body {
   background-position: center;
   background-size: 100%;
   background-repeat: repeat-y;
+  background-attachment: fixed;
 }
 header {
   display: flex;
@@ -145,9 +146,12 @@ header {
   position: absolute;
   top: 0;
   z-index: 1;
-  img {
-    width: 100%;
-  }
+  background: url("../img/banner.png");
+  width: 100%;
+  height: 50vh;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
   &-title {
     position: absolute;
     top: 50%;
@@ -318,8 +322,8 @@ footer p {
   header {
     display: none;
   }
-  .paneaux img {
-    transform: scale(1.5);
+  .paneaux {
+    height: 25vh;
   }
   main {
     flex-direction: column;
@@ -331,21 +335,37 @@ footer p {
     }
     .cours-list {
       width: 80%;
+      &-element {
+        flex-direction: column;
+        align-items: center;
+      }
       .cours-img {
         flex-shrink: 0;
-        width: 20%;
+        width: 80%;
       }
       .cours-text {
-        width: 70%;
+        width: 80%;
+        align-items: center;
         &-description {
           width: 100%;
+          text-align: center;
           p {
             margin-bottom: 20px;
+          }
+          ul {
+            align-items: center;
+            li {
+              margin-right: 0 !important;
+            }
           }
         }
         &-small-element {
           flex-direction: column;
-          align-items: flex-start;
+          align-items: center;
+        }
+        .cours-text-name-teacher {
+          justify-content: space-between;
+          width: 90%;
         }
       }
     }
