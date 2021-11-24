@@ -194,27 +194,6 @@ main {
   justify-content: center;
   height: 100vh;
 }
-.home button {
-  background-color: #ff3146;
-  border: none;
-  margin-left: 20px;
-  width: 250px;
-  height: 60px;
-  border-radius: 0.7rem;
-  margin-top: 30px;
-  color: #fff;
-  font-family: "friz_quadrataregular";
-  font-size: 20px;
-  transition: 0.5s ease;
-  cursor: pointer;
-}
-.home button:hover {
-  border: 2px solid #fff;
-  background-image: none;
-  background-color: transparent;
-  color: #c7f1ff;
-  transition: 0.5s ease;
-}
 
 .text {
   display: flex;

@@ -1,4 +1,8 @@
 $(document).ready(function () {
+  $("video").on("ended", function () {
+    this.load();
+    this.play();
+  });
   $("#nav-button").on("click", function () {
     $(this).parent().children(".nav-mid-element").toggleClass("hide-element");
     $(this).parent().parent().toggleClass("height-nav");
