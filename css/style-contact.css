@@ -89,7 +89,7 @@ header img {
   cursor: pointer;
   color: #fff;
 }
-.nav-mid-element ul {
+.nav-mid-element-drop {
   border-radius: 2rem;
   width: 300px;
   position: absolute;
@@ -103,23 +103,15 @@ header img {
   justify-content: space-between;
   transition: 0.5s ease;
   height: unset;
+  padding: 20px 0;
 }
-.nav-mid-element ul a {
+.nav-mid-element-drop a {
   font-size: 20px;
   font-weight: normal;
   text-decoration: none;
   color: #fff;
   width: 100%;
-}
-.nav-mid-element ul a li {
-  flex: 1;
-  width: 100%;
   text-align: center;
-  padding: 15px 0;
-  border-radius: 2rem;
-}
-.nav-mid-element ul a li:hover {
-  background-color: #e2b450;
 }
 .nav-mid-button {
   width: 100%;

@@ -5,10 +5,10 @@ $(document).ready(function () {
   });
   $(".nav-mid-element").hover(
     function () {
-      $(this).children("ul").css("display", "flex");
+      $(this).children(".nav-mid-element-drop").css("display", "flex");
     },
     function () {
-      $(this).children("ul").css("display", "none");
+      $(this).children(".nav-mid-element-drop").css("display", "none");
     }
   );
 
