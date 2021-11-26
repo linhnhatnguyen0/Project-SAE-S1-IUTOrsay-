@@ -1,8 +1,4 @@
 $(document).ready(function () {
-  $("video").on("ended", function () {
-    this.load();
-    this.play();
-  });
   $("#nav-button").on("click", function () {
     $(this).parent().children(".nav-mid-element").toggleClass("hide-element");
     $(this).parent().parent().toggleClass("height-nav");
@@ -36,5 +32,28 @@ $(document).ready(function () {
     if (width < 1023) {
       $(".cours-text").css("height", "unset");
     }
+  });
+  $("section").addClass("behav");
+  $(".home").removeClass("behav");
+  $(".behav").css("opacity", 0);
+  $(".behav").css("position", "relative");
+  var left = $(".behav").position().left;
+  $(".behav").css("left", left - 200 + "px");
+  $(window).on("scroll", function () {
+    var scroll = $(this).scrollTop() + $(this).innerHeight();
+    $(".behav").each(function () {
+      var offset = $(this).offset().top + $(this).outerHeight() / 4;
+      if (offset < scroll) {
+        if ($(this).css("opacity") == 0) {
+          $(this).animate(
+            {
+              opacity: 1,
+              left: 0,
+            },
+            { duration: 500, queue: false }
+          );
+        }
+      }
+    });
   });
 });
